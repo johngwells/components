@@ -6,6 +6,7 @@ import faker from 'faker';
 import CommentDetail from './CommentDetail';
 import ApprovalCard from './ApprovalCard';
 import Message from './Message';
+import PDF from './pdf';
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
         avatar={faker.image.avatar()}
       />
       </ApprovalCard>
+      <PDF />
       <Message header='Changes in Service' text='We updated our privacy policy' />
     </div>
   );
